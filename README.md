@@ -1,1 +1,1 @@
-# CPAC-torch
+# CPAC
