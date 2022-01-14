@@ -19,5 +19,5 @@ Cross-modality cross interaction:
 python main_crossInteraction_parallel.py
 ```
 
-You can set or tune the hyper-parameters of regularization terms by adding, e.g. ```--l0 0.01 --l1 0.01 --l2 0.01 --l3 1000  ```.
+You can set or tune the hyper-parameters of regularization terms by adding, e.g. ```--l0 0.01 --l1 0.01 --l2 0.01 --l3 1000 ```.
 

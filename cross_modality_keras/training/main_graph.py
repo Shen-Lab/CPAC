@@ -87,7 +87,7 @@ tf.set_random_seed(seed)
 
 
 # load processed data
-data_processed_dir = '/scratch/user/yuning.you/proj/DeepRelations/HierRNN_GCN_constraint_sup/data_processed/'
+data_processed_dir = '../../data/'
 protein_train = np.load(data_processed_dir+'protein_train.npy')
 compound_train_ver = np.load(data_processed_dir+'compound_train_ver.npy')
 compound_train_adj = np.load(data_processed_dir+'compound_train_adj.npy')

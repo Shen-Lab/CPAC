@@ -16,7 +16,7 @@ parser.add_argument('--l3', type=float, default=1000.0)
 parser.add_argument('--batch_size', type=int, default=32)
 parser.add_argument('--epoch', type=int, default=200)
 parser.add_argument('--train', type=int, default=0)
-parser.add_argument('--data_processed_dir', type=str, default='/scratch/user/yuning.you/proj/DeepRelations/HierRNN_GCN_constraint_sup/data_processed/')
+parser.add_argument('--data_processed_dir', type=str, default='../data_processed/')
 args = parser.parse_args()
 print(args)
 
