@@ -40,4 +40,4 @@ python inference.py --model crossInteraction
 
 ## Acknowledgements
 
-The backbone implementation is reference to https://github.com/chentingpc/gf://github.com/Shen-Lab/DeepAffinity.
+The backbone implementation is reference to https://github.com/Shen-Lab/DeepAffinity.
