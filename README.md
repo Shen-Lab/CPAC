@@ -21,7 +21,7 @@ unzip pretrain_data.zip
 ```
 
 ## Experiments
-* Cross-modality protein embeddings [keras](https://github.com/Shen-Lab/CPAC/tree/main/cross_modality_keras) [pytorch](https://github.com/Shen-Lab/CPAC/tree/main/cross_modality_torch)
+* Cross-modality protein embeddings [[keras]](https://github.com/Shen-Lab/CPAC/tree/main/cross_modality_keras) [[pytorch]](https://github.com/Shen-Lab/CPAC/tree/main/cross_modality_torch)
 * [Pre-training with MLM and GraphComp](https://github.com/Shen-Lab/CPAC/tree/main/pretrain_torch)
 * [Finetuning](https://github.com/Shen-Lab/CPAC/tree/main/finetune_torch)
 
