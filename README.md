@@ -1,4 +1,4 @@
-# Cross-Modality and Self-Supervised Protein Embeddings for Compound-Protein Affinity and Contact Prediction
+# Cross-Modality and Self-Supervised Protein Embedding for Compound-Protein Affinity and Contact Prediction
 
 ## Motivation
 Computational methods for compound-protein affinity and contact (CPAC) prediction aim at facilitating rational drug discovery by simultaneous prediction of the strength and the pattern of compound-protein interactions. Although the desired outputs are highly structure-dependent, the lack of protein   structures often force structure-free methods to rely on protein sequence inputs alone.  The scarcity of compound-protein pairs with affinity and contact labels further limits the accuracy and the generalizability of CPAC models.
