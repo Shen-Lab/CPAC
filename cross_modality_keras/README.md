@@ -6,7 +6,7 @@ conda env create -n envname -f environment.yml
 
 ## Training Models of Different Modalities
 ```
-cd ./training/
+cd ./training
 mkdir ./weights
 ```
 
@@ -38,3 +38,6 @@ python inference.py --model concat
 python inference.py --model crossInteraction
 ```
 
+## Acknowledgements
+
+The backbone implementation is reference to https://github.com/chentingpc/gf://github.com/Shen-Lab/DeepAffinity.
