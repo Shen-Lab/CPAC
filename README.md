@@ -22,12 +22,19 @@ unzip pretrain_data.zip
 
 If you use this code for you research, please cite our paper.
 ```
-@article{you2022cross,
-  title={Cross-Modality and Self-Supervised Protein Embedding for Compound-Protein Affinity and Contact Prediction},
-  author={You, Yuning and Shen, Yang},
-  journal={bioRxiv},
-  year={2022},
-  publisher={Cold Spring Harbor Laboratory}
+@article{10.1093/bioinformatics/btac470,
+    author = {You, Yuning and Shen, Yang},
+    title = "{Cross-modality and self-supervised protein embedding for compound–protein affinity and contact prediction}",
+    journal = {Bioinformatics},
+    volume = {38},
+    number = {Supplement_2},
+    pages = {ii68-ii74},
+    year = {2022},
+    month = {09},
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btac470},
+    url = {https://doi.org/10.1093/bioinformatics/btac470},
+    eprint = {https://academic.oup.com/bioinformatics/article-pdf/38/Supplement\_2/ii68/45884189/btac470.pdf},
 }
 ```
 
