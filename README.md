@@ -19,8 +19,8 @@ unzip pretrain_data.zip
 * [Finetuning](https://github.com/Shen-Lab/CPAC/tree/main/finetune_torch)
 
 ## Discussions
-* For the contact prediction training, we use the [regression loss](https://github.com/Shen-Lab/CPAC/blob/d1c7eb2291d79433ab70aa98eb1dbceb72ff6b07/cross_modality_torch/main_concatenation_parallel.py#L150) rather than the standard [classification loss](https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html).
-We find that regression loss provides great benefits on precision evaluation (see supplemental results for evidence).
+* For the contact prediction training, we use the [regression loss](https://github.com/Shen-Lab/CPAC/blob/d1c7eb2291d79433ab70aa98eb1dbceb72ff6b07/cross_modality_torch/main_concatenation_parallel.py#L150) (where the ground-truth, binary contact matrix was [normalized](https://github.com/Shen-Lab/CPAC/blob/d1c7eb2291d79433ab70aa98eb1dbceb72ff6b07/cross_modality_torch/main_concatenation_parallel.py#L83)) rather than the standard [classification loss](https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html).
+We find that regression loss provides great benefits on precision evaluation (see supplemental results for evidence). One might opt to the loss of the standard binary cross entropy with a non-normalized, binary ground-truth contact matrix, by modifying the codes in the above linked lines. 
 
 ## Citation
 
