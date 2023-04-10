@@ -22,6 +22,17 @@ unzip pretrain_data.zip
 * For the contact prediction training, we use the [regression loss](https://github.com/Shen-Lab/CPAC/blob/d1c7eb2291d79433ab70aa98eb1dbceb72ff6b07/cross_modality_torch/main_concatenation_parallel.py#L150) (where the ground-truth, binary contact matrix was [normalized](https://github.com/Shen-Lab/CPAC/blob/d1c7eb2291d79433ab70aa98eb1dbceb72ff6b07/cross_modality_torch/main_concatenation_parallel.py#L83)) rather than the standard [classification loss](https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html).
 We find that regression loss provides great benefits on precision evaluation (see supplemental results for evidence). One might opt to the loss of the standard binary cross entropy with a non-normalized, binary ground-truth contact matrix, by modifying the codes in the above linked lines. 
 
+## Featurization
+To process raw data into input formats of CPAC, we follow the same procedure as in DeepRelations (https://pubs.acs.org/doi/full/10.1021/acs.jcim.0c00866#) with the detailed description in its supplement (https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.0c00866/suppl_file/ci0c00866_si_001.pdf). We further provide a utils file for this purpose: https://github.com/Shen-Lab/CPAC/blob/main/featurization_utils.py.
+
+High-level summary of the featurization:
+
+Proteins graph: Residues as nodes, and edges justified by spatial distances of C-alpha atoms
+- Node feature: One-hot embedding of the residue types (mapping dictionary: https://github.com/Shen-Lab/CPAC/blob/bc7fc71e30df7758b3ace2301e00d5f82d4d3965/featurization_utils.py#L2)
+- Edges: If structures are present, the adjacency matrix is constructed with a_ij = 1 if  C-alpha distance <= 8 angstroms. If not, computational tools can be used to predict it (Section 1.3 in https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.0c00866/suppl_file/ci0c00866_si_001.pdf)
+
+Compound graphs: Atoms as nodes and edge featurization would be more complicated considering chemical topology. A SMILES to compound graph function can be found at: https://github.com/Shen-Lab/CPAC/blob/bc7fc71e30df7758b3ace2301e00d5f82d4d3965/featurization_utils.py#L187.
+
 ## Citation
 
 If you use this code for you research, please cite our paper.
