@@ -18,6 +18,10 @@ unzip pretrain_data.zip
 * [Pre-training with MLM and GraphComp](https://github.com/Shen-Lab/CPAC/tree/main/pretrain_torch)
 * [Finetuning](https://github.com/Shen-Lab/CPAC/tree/main/finetune_torch)
 
+## Discussions
+* For the contact prediction training, we use the [regression loss](https://github.com/Shen-Lab/CPAC/blob/d1c7eb2291d79433ab70aa98eb1dbceb72ff6b07/cross_modality_torch/main_concatenation_parallel.py#L150) rather than the standard [classification loss](https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html).
+We find that regression loss provides great benefits on precision evaluation (see supplemental results for evidence).
+
 ## Citation
 
 If you use this code for you research, please cite our paper.
