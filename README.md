@@ -7,7 +7,7 @@ Computational methods for compound-protein affinity and contact (CPAC) predictio
 To overcome the aforementioned challenges of structure naivety and labeled-data scarcity, we, for the first time, introduce cross-modality and self-supervised learning, respectively, for structure-aware and task-relevant protein embedding.  Specifically, protein data are  available in both modalities of 1D amino-acid sequences and predicted 2D contact maps, that are separately embedded with recurrent and graph neural networks, respectively, as well as jointly embedded with two cross-modality schemes.  Furthermore, both protein modalities are pretrained under various self-supervised learning strategies, by leveraging massive amount of unlabeled protein data.  Our results indicate that individual protein modalities differ in their strengths of predicting affinities or contacts.  Proper cross-modality protein embedding combined with self-supervised learning improves model  generalizability when predicting both affinities and contacts for unseen proteins. 
 
 ## Data
-Please download the processed data from https://drive.google.com/file/d/1jvMHKpmg-iU8uqfJrmU-MQHSP_e46a-k/view?usp=sharing and https://drive.google.com/file/d/19g9jUt4BF_-MouUooqzs6iGIslWG-mmJ/view?usp=sharing, and extract them by:
+Please download the processed data from https://zenodo.org/records/11005446, and extract them by:
 ```
 unzip data.zip
 unzip pretrain_data.zip
