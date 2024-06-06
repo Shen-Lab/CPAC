@@ -12,6 +12,7 @@ Please download the processed data from https://zenodo.org/records/11005446, and
 unzip data.zip
 unzip pretrain_data.zip
 ```
+Please refer to https://github.com/Shen-Lab/DeepAffinity/tree/master/data_DeepRelations for the raw data.
 
 ## Experiments
 * Cross-modality protein embeddings [[keras]](https://github.com/Shen-Lab/CPAC/tree/main/cross_modality_keras) [[pytorch]](https://github.com/Shen-Lab/CPAC/tree/main/cross_modality_torch)
